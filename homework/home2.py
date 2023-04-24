@@ -6,21 +6,21 @@
 # 5 -> 1 0 1 1 0
 # 2
 
-import random
-eagle = 0
-not_eagle = 0
-quantity = int(input ("введите количество монеток: "))
-for i in range(quantity):
-  coin = random.randint(0, 1)
-  print (coin, end = " ")
-  if coin == 0:
-    eagle+=1
-  else:
-    not_eagle+=1
-if eagle > not_eagle:
-  print(f"\nминимальное количество монет, которые нужно перевернуть {not_eagle}")
-else:
-  print(f"\nминимальное количество монет, которые нужно перевернуть {eagle}")
+# import random
+# eagle = 0
+# not_eagle = 0
+# quantity = int(input ("введите количество монеток: "))
+# for i in range(quantity):
+#   coin = random.randint(0, 1)
+#   print (coin, end = " ")
+#   if coin == 0:
+#     eagle+=1
+#   else:
+#     not_eagle+=1
+# if eagle > not_eagle:
+#   print(f"\nминимальное количество монет, которые нужно перевернуть {not_eagle}")
+# else:
+#   print(f"\nминимальное количество монет, которые нужно перевернуть {eagle}")
   
   
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. 
@@ -31,17 +31,23 @@ else:
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-prod = int(input ("введите произведение чисел: "))
-sum = int(input ("введите сумму чисел: "))
-print (f"сумма чисел = {sum}, а произведение = {prod}")
-y = 0
-x = 0
-while y <= sum and x*y != prod:
-  y+=1
-  x = sum - y
-  if x*y == prod:
-    print (f"число х = {x}, а число у = {y}")
+# prod = int(input ("введите произведение чисел: "))
+# sum = int(input ("введите сумму чисел: "))
+# print (f"сумма чисел = {sum}, а произведение = {prod}")
+# y = 0
+# x = 0
+# while y <= sum and x*y != prod:
+#   y+=1
+#   x = sum - y
+#   if x*y == prod:
+#     print (f"число х = {x}, а число у = {y}")
 
+# prod = int(input ("введите произведение чисел: "))
+# sum = int(input ("введите сумму чисел: "))
+# for i in range(sum):
+#   for j in range(prod):
+#     if sum == i + j and prod == i * j:
+#       print(f"сумма чисел {i} и {j} = {sum}, а произведение = {prod}")
     
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа
 # вида 2 в степени к), не превосходящие числа N
@@ -49,8 +55,6 @@ while y <= sum and x*y != prod:
 
 n = int(input ("введите число: "))
 x = 0
-temp = 0
 while 2**x < n:
-  temp = 2**x
-  print (temp, end = " ")
+  print (2**x, end = " ")
   x+=1
