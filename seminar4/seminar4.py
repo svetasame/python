@@ -109,23 +109,23 @@
 # m — кол-во элементов второго множества. Затем пользователь вводит 
 # сами элементы множеств.
 
-# import random
-# n = int(input("введите длину первого ряда чисел: "))
-# m = int(input("введите длину второго ряда чисел: "))
-# first_set = set()
-# both_in_two = set()
-# for i in range(n):
-#     i = random.randint(1, 10)
-#     print(i, end=" ")
-#     first_set.add(i)
-# print()
-# for i in range(m):
-#     i = random.randint(1, 10)
-#     print(i, end=" ")
-#     if i in first_set:
-#       both_in_two.add(i) 
-# print()       
-# print(sorted(both_in_two)) 
+import random
+n = int(input("введите длину первого ряда чисел: "))
+m = int(input("введите длину второго ряда чисел: "))
+first_set = set()
+both_in_two = set()
+for i in range(n):
+    i = random.randint(1, 10)
+    print(i, end=" ")
+    first_set.add(i)
+print()
+for i in range(m):
+    i = random.randint(1, 10)
+    print(i, end=" ")
+    if i in first_set:
+      both_in_two.add(i) 
+print()       
+print(sorted(both_in_two)) 
 
 
 # Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. 

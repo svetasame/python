@@ -38,12 +38,10 @@ def merge_sort(nums):
         nums[k] = right[j]
         j += 1
       k += 1
-      
     while i < len(left):
       nums[k] = left[i]
       i += 1
       k += 1
-      
     while j < len(right):
       nums[k] = right[j]
       j += 1
