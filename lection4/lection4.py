@@ -86,4 +86,22 @@ data_4 = list(zip(users,ids))
 # print(data_4)
 
 goroda = ['lasvegas','vladivostok','moscow']
-print(list(enumerate(goroda)))
+# print(list(enumerate(goroda)))
+
+
+# colors = ['red', 'green', 'blue', '1', '2']
+# datta = open('file.txt','a') #указываем режим в котором будем работать, файл создастся (а)
+# datta.writelines(colors) # разделителй не будет
+# datta.close()
+
+# with open("file.txt", "w") as datta:
+#   datta.write('line 1\n')
+#   datta.write('line 34\n')
+
+# print(56)
+
+path = "file.txt"
+data13 = open("file.txt", "r")
+for line in data13:
+  print(line)
+data13.close()
