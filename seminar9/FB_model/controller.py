@@ -15,7 +15,9 @@ def start():
                 pb = model.get_pb()
                 view.print_contact(pb, text.load_error)
             case 4:
-                pass
+                contact = view.input_contact(text.new_contact, text.cancel_input)
+                name = model.add_contact(contact)
+                view.print_message(text.new_contact_successful(name))
             case 5:
                 pass
             case 6:

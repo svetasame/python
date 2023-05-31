@@ -22,7 +22,13 @@ def print_contact(pb: list[dict[str, str]], error: str):
     else:
         print_message(error)
 
-def input_contact(message: str) -> dict:
-    name = input()
-    phone = input()
-    comment = input()
+def input_contact(message: str, cancel: str) -> dict:
+    contact = {}
+    print(message)
+    for key, value in text.input_contact.items():
+        data = input(value)
+        if data:
+            contact[key] = data
+        else:
+            print_message(cancel)
+    return contact

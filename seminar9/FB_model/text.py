@@ -13,3 +13,15 @@ input_choice = "\nВыберите пункт меню: "
 load_successful = "Телефонная книга успешно открыта"
 
 load_error = "Телефонная книга пуста или не открыта"
+
+input_contact = {"name":"Введите имя: ",
+                 "phone":"Введите телефон: ",
+                 "comment":"Введите комментарий: "}
+
+new_contact = "Введите данные нового контакта (пустое поле для отмены): "
+
+def new_contact_successful(name: str) -> str:
+    return f"Контакт {name} успешно добавлен"
+
+cancel_input = "Отмена ввода"
+
