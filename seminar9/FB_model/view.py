@@ -39,3 +39,7 @@ def input_index(message: str, pb: list, error: str) -> int:
         index = input(message)
         if index.isdigit() and 0 <int(index) < len(pb) + 1:
             return int(index)
+
+def find_name(message: str, pb: list, error: str):
+    name_for_find = input(message)
+

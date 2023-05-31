@@ -31,3 +31,10 @@ def save_pb():
 
 def delete_contact(index: int):
     return phone_book.pop(index-1).get("name")
+
+def find_contact(name):
+    global phone_book, path
+    for line in phone_book:
+        if name in line:
+            return line
+        else:

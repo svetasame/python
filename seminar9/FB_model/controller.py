@@ -20,7 +20,8 @@ def start():
                 name = model.add_contact(contact)
                 view.print_message(text.new_contact_successful(name))
             case 5:
-                pass
+                pb = model.get_pb()
+                name =
             case 6:
                 pass
             case 7:
