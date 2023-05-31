@@ -32,3 +32,10 @@ def input_contact(message: str, cancel: str) -> dict:
         else:
             print_message(cancel)
     return contact
+
+def input_index(message: str, pb: list, error: str) -> int:
+    print_contact(pb, error)
+    while True:
+        index = input(message)
+        if index.isdigit() and 0 <int(index) < len(pb) + 1:
+            return int(index)

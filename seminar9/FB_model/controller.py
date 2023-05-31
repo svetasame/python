@@ -10,7 +10,8 @@ def start():
                 model.open_pb()
                 view.print_message(text.load_successful)
             case 2:
-                pass
+                model.save_pb()
+                view.print_message(text.save_successful)
             case 3:
                 pb = model.get_pb()
                 view.print_contact(pb, text.load_error)
@@ -23,7 +24,10 @@ def start():
             case 6:
                 pass
             case 7:
-                pass
+                pb = model.get_pb()
+                index = view.input_index(text.input_del_index, pb, text.load_error)
+                name = model.delete_contact(index)
+                view.print_message(text.del_contact(name))
             case 8:
                 pass
 

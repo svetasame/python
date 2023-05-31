@@ -6,9 +6,9 @@ main_menu = '''\nГлавное меню:
     5. Найти контакт
     6. Изменить контакт
     7. Удалить контакт
-    8. Выход'''
+    8. Выход\n'''
 
-input_choice = "\nВыберите пункт меню: "
+input_choice = "Выберите пункт меню: "
 
 load_successful = "Телефонная книга успешно открыта"
 
@@ -25,3 +25,9 @@ def new_contact_successful(name: str) -> str:
 
 cancel_input = "Отмена ввода"
 
+save_successful = "Телефонная книга успешно сохранена"
+
+input_del_index = "Введите индекс контакта для удаления: "
+
+def del_contact(name: str):
+    return f"Контакт {name} успешно удален!"
