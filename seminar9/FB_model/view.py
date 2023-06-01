@@ -22,7 +22,7 @@ def print_contact(pb: list[dict[str, str]], error: str):
     else:
         print_message(error)
 
-def input_contact(message: str, cancel: str) -> dict:
+def input_contact(message: str, cancel:str) -> dict:
     contact = {}
     print(message)
     for key, value in text.input_contact.items():
@@ -40,6 +40,5 @@ def input_index(message: str, pb: list, error: str) -> int:
         if index.isdigit() and 0 <int(index) < len(pb) + 1:
             return int(index)
 
-def find_name(message: str, pb: list, error: str):
-    name_for_find = input(message)
-
+def input_find(message) -> str:
+    return input(message)
